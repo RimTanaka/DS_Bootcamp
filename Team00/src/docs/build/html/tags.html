@@ -1,0 +1,224 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tags module &mdash; документация MovieLens Analyzer 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9ca2116e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="prev" title="ratings module" href="ratings.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MovieLens Analyzer
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Модули проекта</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="movielens_analysis.html">movielens_analysis module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="links.html">links module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links"><code class="docutils literal notranslate"><span class="pre">Links</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.get_imdb"><code class="docutils literal notranslate"><span class="pre">Links.get_imdb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.longest"><code class="docutils literal notranslate"><span class="pre">Links.longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.most_expensive"><code class="docutils literal notranslate"><span class="pre">Links.most_expensive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.most_profitable"><code class="docutils literal notranslate"><span class="pre">Links.most_profitable()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.top_cost_per_minute"><code class="docutils literal notranslate"><span class="pre">Links.top_cost_per_minute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.top_directors"><code class="docutils literal notranslate"><span class="pre">Links.top_directors()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="movies.html">movies module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="movies.html#movies.Movies"><code class="docutils literal notranslate"><span class="pre">Movies</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.dist_by_genres"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_genres()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.dist_by_release"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_release()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.most_genres"><code class="docutils literal notranslate"><span class="pre">Movies.most_genres()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ratings.html">ratings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ratings.html#ratings.Ratings"><code class="docutils literal notranslate"><span class="pre">Ratings</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Users"><code class="docutils literal notranslate"><span class="pre">Ratings.Users</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">tags module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tags.Tags"><code class="docutils literal notranslate"><span class="pre">Tags</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tags.Tags.longest"><code class="docutils literal notranslate"><span class="pre">Tags.longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tags.Tags.most_popular"><code class="docutils literal notranslate"><span class="pre">Tags.most_popular()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tags.Tags.most_words"><code class="docutils literal notranslate"><span class="pre">Tags.most_words()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tags.Tags.most_words_and_longest"><code class="docutils literal notranslate"><span class="pre">Tags.most_words_and_longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tags.Tags.tags_with"><code class="docutils literal notranslate"><span class="pre">Tags.tags_with()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MovieLens Analyzer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Модули проекта</a></li>
+      <li class="breadcrumb-item active">tags module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/tags.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tags">
+<span id="tags-module"></span><h1>tags module<a class="headerlink" href="#module-tags" title="Ссылка на этот заголовок"></a></h1>
+<p>Модуль для анализа тегов из файла tags.csv.</p>
+<p>Содержит класс Tags, который позволяет определить самые длинные,
+самые популярные и самые насыщенные словами теги, а также производить
+поиск по ключевому слову.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tags.Tags">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tags.</span></span><span class="sig-name descname"><span class="pre">Tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_the_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tags.Tags" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для анализа данных из файла tags.csv.</p>
+<dl class="simple">
+<dt>Атрибуты:</dt><dd><p>path: Путь к файлу tags.csv.
+data: DataFrame с загруженными данными.</p>
+</dd>
+<dt>Методы:</dt><dd><p>most_words(n): Возвращает top-n тегов с наибольшим количеством слов.
+longest(n): Возвращает top-n самых длинных тегов по количеству символов.
+most_words_and_longest(n): Возвращает пересечение самых длинных и самых словесных тегов.
+most_popular(n): Возвращает top-n самых популярных тегов по количеству упоминаний.
+tags_with(word): Возвращает уникальные теги, содержащие заданное слово.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="tags.Tags.longest">
+<span class="sig-name descname"><span class="pre">longest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#tags.Tags.longest" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n самых длинных тегов по количеству символов.</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>list: список тегов, отсортированных по убыванию длины.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tags.Tags.most_popular">
+<span class="sig-name descname"><span class="pre">most_popular</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#tags.Tags.most_popular" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n самых популярных тегов по количеству упоминаний.</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>dict: {тег: количество}, отсортировано по убыванию количества.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tags.Tags.most_words">
+<span class="sig-name descname"><span class="pre">most_words</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#tags.Tags.most_words" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n тегов с наибольшим количеством слов внутри.</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>dict: {тег: количество_слов}, отсортировано по убыванию.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tags.Tags.most_words_and_longest">
+<span class="sig-name descname"><span class="pre">most_words_and_longest</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#tags.Tags.most_words_and_longest" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает пересечение top-n тегов по количеству слов и top-n по длине.</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>list: список уникальных тегов в пересечении, отсортированный.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tags.Tags.tags_with">
+<span class="sig-name descname"><span class="pre">tags_with</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span></span></span><a class="headerlink" href="#tags.Tags.tags_with" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает все уникальные теги, содержащие заданное слово (без учета регистра).</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>list: отсортированный список тегов, содержащих слово.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="ratings.html" class="btn btn-neutral float-left" title="ratings module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Weaverir. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

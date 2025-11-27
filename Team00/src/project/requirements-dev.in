@@ -1,0 +1,12 @@
+# dev tools
+pytest
+pytest-cov
+pipreqs
+pip-tools
+black
+sphinx
+sphinx_rtd_theme
+
+# также подтягиваем основные зависимости
+-r requirements.in
+

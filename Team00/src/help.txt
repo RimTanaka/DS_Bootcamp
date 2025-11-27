@@ -1,0 +1,13 @@
+
+pip-compile requirements.in
+pip-compile requirements-dev.in - Для обновления списка библиотек [prod/dev]
+pip-compile --upgrade --strip-extras project/requirements-dev.in - обновление всех зависимостей
+
+pytest --cov --cov-report=html tests/ - для создания отчеты с покрытием кода построчным в тестах
+
+pytest --cov --cov-report=term tests/ - просто првоести тест в терминале
+
+make -C docs html - для создание документации на маке
+
+cd docs
+make html - для создания документации на Unix

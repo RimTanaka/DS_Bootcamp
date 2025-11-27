@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Модули проекта &mdash; документация MovieLens Analyzer 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9ca2116e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="movielens_analysis module" href="movielens_analysis.html" />
+    <link rel="prev" title="MovieLens Analyzer documentation" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MovieLens Analyzer
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Модули проекта</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="movielens_analysis.html">movielens_analysis module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="links.html">links module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links"><code class="docutils literal notranslate"><span class="pre">Links</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.get_imdb"><code class="docutils literal notranslate"><span class="pre">Links.get_imdb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.longest"><code class="docutils literal notranslate"><span class="pre">Links.longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.most_expensive"><code class="docutils literal notranslate"><span class="pre">Links.most_expensive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.most_profitable"><code class="docutils literal notranslate"><span class="pre">Links.most_profitable()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.top_cost_per_minute"><code class="docutils literal notranslate"><span class="pre">Links.top_cost_per_minute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.top_directors"><code class="docutils literal notranslate"><span class="pre">Links.top_directors()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="movies.html">movies module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="movies.html#movies.Movies"><code class="docutils literal notranslate"><span class="pre">Movies</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.dist_by_genres"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_genres()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.dist_by_release"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_release()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.most_genres"><code class="docutils literal notranslate"><span class="pre">Movies.most_genres()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ratings.html">ratings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ratings.html#ratings.Ratings"><code class="docutils literal notranslate"><span class="pre">Ratings</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Users"><code class="docutils literal notranslate"><span class="pre">Ratings.Users</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html">tags module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tags.html#tags.Tags"><code class="docutils literal notranslate"><span class="pre">Tags</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.longest"><code class="docutils literal notranslate"><span class="pre">Tags.longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.most_popular"><code class="docutils literal notranslate"><span class="pre">Tags.most_popular()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.most_words"><code class="docutils literal notranslate"><span class="pre">Tags.most_words()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.most_words_and_longest"><code class="docutils literal notranslate"><span class="pre">Tags.most_words_and_longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.tags_with"><code class="docutils literal notranslate"><span class="pre">Tags.tags_with()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MovieLens Analyzer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Модули проекта</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modules.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="modules">
+<span id="id1"></span><h1>Модули проекта<a class="headerlink" href="#modules" title="Ссылка на этот заголовок"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="movielens_analysis.html">movielens_analysis module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="links.html">links module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="links.html#links.Links"><code class="docutils literal notranslate"><span class="pre">Links</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links.get_imdb"><code class="docutils literal notranslate"><span class="pre">Links.get_imdb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links.longest"><code class="docutils literal notranslate"><span class="pre">Links.longest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links.most_expensive"><code class="docutils literal notranslate"><span class="pre">Links.most_expensive()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links.most_profitable"><code class="docutils literal notranslate"><span class="pre">Links.most_profitable()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links.top_cost_per_minute"><code class="docutils literal notranslate"><span class="pre">Links.top_cost_per_minute()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links.top_directors"><code class="docutils literal notranslate"><span class="pre">Links.top_directors()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="movies.html">movies module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="movies.html#movies.Movies"><code class="docutils literal notranslate"><span class="pre">Movies</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="movies.html#movies.Movies.dist_by_genres"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_genres()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movies.html#movies.Movies.dist_by_release"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_release()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="movies.html#movies.Movies.most_genres"><code class="docutils literal notranslate"><span class="pre">Movies.most_genres()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ratings.html">ratings module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ratings.html#ratings.Ratings"><code class="docutils literal notranslate"><span class="pre">Ratings</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies.dist_by_rating"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies.dist_by_rating()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies.dist_by_year"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies.dist_by_year()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies.top_by_num_of_ratings"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies.top_by_num_of_ratings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies.top_by_ratings"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies.top_by_ratings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Movies.top_controversial"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies.top_controversial()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ratings.html#ratings.Ratings.Users"><code class="docutils literal notranslate"><span class="pre">Ratings.Users</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Users.dist_by_num_of_ratings"><code class="docutils literal notranslate"><span class="pre">Ratings.Users.dist_by_num_of_ratings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Users.dist_by_rating"><code class="docutils literal notranslate"><span class="pre">Ratings.Users.dist_by_rating()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Users.most_active_users"><code class="docutils literal notranslate"><span class="pre">Ratings.Users.most_active_users()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="ratings.html#ratings.Ratings.Users.top_controversial"><code class="docutils literal notranslate"><span class="pre">Ratings.Users.top_controversial()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tags.html">tags module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tags.html#tags.Tags"><code class="docutils literal notranslate"><span class="pre">Tags</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tags.html#tags.Tags.longest"><code class="docutils literal notranslate"><span class="pre">Tags.longest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tags.html#tags.Tags.most_popular"><code class="docutils literal notranslate"><span class="pre">Tags.most_popular()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tags.html#tags.Tags.most_words"><code class="docutils literal notranslate"><span class="pre">Tags.most_words()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tags.html#tags.Tags.most_words_and_longest"><code class="docutils literal notranslate"><span class="pre">Tags.most_words_and_longest()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="tags.html#tags.Tags.tags_with"><code class="docutils literal notranslate"><span class="pre">Tags.tags_with()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="index.html" class="btn btn-neutral float-left" title="MovieLens Analyzer documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="movielens_analysis.html" class="btn btn-neutral float-right" title="movielens_analysis module" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Weaverir. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

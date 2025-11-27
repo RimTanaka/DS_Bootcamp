@@ -1,0 +1,17 @@
+# .coveragerc
+[run]
+omit =
+    tests/*
+    */tests/*
+    */test_*.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self\.debug
+    if __name__ == .__main__.:
+
+[html]
+directory = htmlcov
+

@@ -1,0 +1,305 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="ru" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ratings module &mdash; документация MovieLens Analyzer 1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=9ca2116e"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=cd1d70c9"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="tags module" href="tags.html" />
+    <link rel="prev" title="movies module" href="movies.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            MovieLens Analyzer
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Поиск в документации" aria-label="Поиск в документации" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Меню навигации">
+              <p class="caption" role="heading"><span class="caption-text">Содержание</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Модули проекта</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="movielens_analysis.html">movielens_analysis module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="links.html">links module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="links.html#links.Links"><code class="docutils literal notranslate"><span class="pre">Links</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.get_imdb"><code class="docutils literal notranslate"><span class="pre">Links.get_imdb()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.longest"><code class="docutils literal notranslate"><span class="pre">Links.longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.most_expensive"><code class="docutils literal notranslate"><span class="pre">Links.most_expensive()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.most_profitable"><code class="docutils literal notranslate"><span class="pre">Links.most_profitable()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.top_cost_per_minute"><code class="docutils literal notranslate"><span class="pre">Links.top_cost_per_minute()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="links.html#links.Links.top_directors"><code class="docutils literal notranslate"><span class="pre">Links.top_directors()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="movies.html">movies module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="movies.html#movies.Movies"><code class="docutils literal notranslate"><span class="pre">Movies</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.dist_by_genres"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_genres()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.dist_by_release"><code class="docutils literal notranslate"><span class="pre">Movies.dist_by_release()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="movies.html#movies.Movies.most_genres"><code class="docutils literal notranslate"><span class="pre">Movies.most_genres()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">ratings module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ratings.Ratings"><code class="docutils literal notranslate"><span class="pre">Ratings</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#ratings.Ratings.Movies"><code class="docutils literal notranslate"><span class="pre">Ratings.Movies</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ratings.Ratings.Users"><code class="docutils literal notranslate"><span class="pre">Ratings.Users</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tags.html">tags module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tags.html#tags.Tags"><code class="docutils literal notranslate"><span class="pre">Tags</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.longest"><code class="docutils literal notranslate"><span class="pre">Tags.longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.most_popular"><code class="docutils literal notranslate"><span class="pre">Tags.most_popular()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.most_words"><code class="docutils literal notranslate"><span class="pre">Tags.most_words()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.most_words_and_longest"><code class="docutils literal notranslate"><span class="pre">Tags.most_words_and_longest()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tags.html#tags.Tags.tags_with"><code class="docutils literal notranslate"><span class="pre">Tags.tags_with()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Меню навигации для мобильных устройств" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MovieLens Analyzer</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Навигация по страницам">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Модули проекта</a></li>
+      <li class="breadcrumb-item active">ratings module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ratings.rst.txt" rel="nofollow"> Просмотреть исходный код страницы</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-ratings">
+<span id="ratings-module"></span><h1>ratings module<a class="headerlink" href="#module-ratings" title="Ссылка на этот заголовок"></a></h1>
+<p>Модуль для анализа рейтингов фильмов из датасета MovieLens.</p>
+<p>Содержит класс Ratings, включающий вложенные классы Movies и Users
+для анализа оценок по фильмам и пользователям соответственно.</p>
+<p>Предоставляет методы для анализа распределений по годам, оценкам,
+поиска самых популярных, противоречивых фильмов и пользователей.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="ratings.Ratings">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ratings.</span></span><span class="sig-name descname"><span class="pre">Ratings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_to_the_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ratings.Ratings" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для анализа данных из файла ratings.csv.</p>
+<dl class="simple">
+<dt>Атрибуты:</dt><dd><p>path: путь к файлу ratings.csv
+data: DataFrame с данными из файла</p>
+</dd>
+<dt>Вложенные классы:</dt><dd><p>Movies: Методы анализа по фильмам
+Users: Методы анализа по пользователям</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="ratings.Ratings.Movies">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Movies</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ratings_df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ratings.Ratings.Movies" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для анализа рейтингов по фильмам.</p>
+<dl class="simple">
+<dt>Методы:</dt><dd><p>dist_by_year(): Распределение количества оценок по годам.
+dist_by_rating(): Распределение количества оценок по рейтингу.
+top_by_num_of_ratings(n): Топ-n фильмов по числу оценок.
+top_by_ratings(n, metric): Топ-n фильмов по среднему или медианному рейтингу.
+top_controversial(n): Топ-n самых противоречивых фильмов (по дисперсии).</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Movies.dist_by_rating">
+<span class="sig-name descname"><span class="pre">dist_by_rating</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Movies.dist_by_rating" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает распределение оценок по значениям рейтингов.</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>dict: {рейтинг: количество}, отсортировано по возрастанию рейтинга.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Movies.dist_by_year">
+<span class="sig-name descname"><span class="pre">dist_by_year</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Movies.dist_by_year" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает распределение оценок по годам на основе timestamp.</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>dict: {год: количество оценок}, отсортировано по возрастанию года.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Movies.top_by_num_of_ratings">
+<span class="sig-name descname"><span class="pre">top_by_num_of_ratings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Movies.top_by_num_of_ratings" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n фильмов по количеству оценок.</p>
+<dl class="simple">
+<dt>Аргументы:</dt><dd><p>n: int, количество фильмов для возврата.</p>
+</dd>
+<dt>Возвращает:</dt><dd><p>dict: {movieId: число оценок}, сортировка по убыванию.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Movies.top_by_ratings">
+<span class="sig-name descname"><span class="pre">top_by_ratings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'average'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Movies.top_by_ratings" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n фильмов по среднему или медианному рейтингу.</p>
+<dl class="simple">
+<dt>Аргументы:</dt><dd><p>n: int, количество фильмов для возврата.
+metric: str, „average“ или „median“.</p>
+</dd>
+<dt>Возвращает:</dt><dd><p>dict: {movieId: значение метрики}, сортировка по убыванию.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Movies.top_controversial">
+<span class="sig-name descname"><span class="pre">top_controversial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Movies.top_controversial" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n фильмов по дисперсии оценок.</p>
+<dl class="simple">
+<dt>Аргументы:</dt><dd><p>n: int, количество фильмов для возврата.</p>
+</dd>
+<dt>Возвращает:</dt><dd><p>dict: {movieId: дисперсия}, отсортировано по убыванию.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ratings.Ratings.Users">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ratings_df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ratings.Ratings.Users" title="Ссылка на это определение"></a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для анализа рейтингов по пользователям. Наследует методы от Movies.</p>
+<dl class="simple">
+<dt>Методы:</dt><dd><p>dist_by_num_of_ratings(): Распределение пользователей по числу оценок.
+dist_by_rating(metric): Распределение пользователей по среднему или медианному рейтингу.
+top_controversial(n): Топ-n пользователей по дисперсии оценок.</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Users.dist_by_num_of_ratings">
+<span class="sig-name descname"><span class="pre">dist_by_num_of_ratings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Users.dist_by_num_of_ratings" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает распределение пользователей по количеству оценок.</p>
+<dl class="simple">
+<dt>Возвращает:</dt><dd><p>dict: {userId: количество оценок}, отсортировано по userId.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Users.dist_by_rating">
+<span class="sig-name descname"><span class="pre">dist_by_rating</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'average'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Users.dist_by_rating" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает распределение пользователей по средней или медианной оценке.</p>
+<dl class="simple">
+<dt>Аргументы:</dt><dd><p>metric: str, „average“ или „median“.</p>
+</dd>
+<dt>Возвращает:</dt><dd><p>dict: {userId: значение метрики}, отсортировано по userId.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Users.most_active_users">
+<span class="sig-name descname"><span class="pre">most_active_users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Users.most_active_users" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n пользователей по кол-ву оценок</p>
+<dl class="simple">
+<dt>Аргументы:</dt><dd><p>n: int, количество пользователей для возврата.</p>
+</dd>
+<dt>Возвращает:</dt><dd><p>dict: {userId: кол-во оценок}</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="ratings.Ratings.Users.top_controversial">
+<span class="sig-name descname"><span class="pre">top_controversial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="headerlink" href="#ratings.Ratings.Users.top_controversial" title="Ссылка на это определение"></a></dt>
+<dd><p>Возвращает top-n пользователей по дисперсии оценок.</p>
+<dl class="simple">
+<dt>Аргументы:</dt><dd><p>n: int, количество пользователей для возврата.</p>
+</dd>
+<dt>Возвращает:</dt><dd><p>dict: {userId: дисперсия}, отсортировано по убыванию дисперсии.</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Нижняя область">
+        <a href="movies.html" class="btn btn-neutral float-left" title="movies module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Предыдущая</a>
+        <a href="tags.html" class="btn btn-neutral float-right" title="tags module" accesskey="n" rel="next">Следующая <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Авторские права 2025, Weaverir. </p>
+  </div>
+
+  Собрано при помощи <a href="https://www.sphinx-doc.org/">Sphinx</a> с использованием
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">темы,</a>
+    предоставленной <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
