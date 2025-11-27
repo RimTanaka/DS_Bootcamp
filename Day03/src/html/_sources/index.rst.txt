@@ -1,0 +1,123 @@
+.. inst many lib to Python documentation master file, created by
+   sphinx-quickstart on Mon Dec 30 01:17:24 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to inst many lib to Python's documentation!
+===================================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Основные разделы
+
+
+
+Содержание:
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
+
+ex00/venv.py
+-------------------
+
+.. automodule:: ex00.venv
+   :members:
+   :undoc-members:
+
+
+ex01/pies_bars.sh
+-------------------
+
+Этот скрипт генерирует графики на основе данных, представленных в файле `data.txt`.
+Скрипт использует `termgraph` для визуализации данных.
+
+.. image:: images/pies_bars.png
+   :alt: График результатов
+   :align: center
+
+
+ex02/librarian.py
+-------------------
+
+.. automodule:: ex02.librarian
+   :members:
+   :undoc-members:
+
+
+ex03/financial.py
+-------------------
+
+.. automodule:: ex03.financial
+   :members:
+   :undoc-members:
+
+
+ex04/financial_enhanced.py
+---------------------------
+
+.. automodule:: ex04.financial
+   :members:
+   :undoc-members:
+
+
+ex04/profiling-sleep.txt
+---------------------------
+
+Файл содержит данные о времени простоя в процессе выполнения программы, которые могут быть полезны для оптимизации.
+
+.. image:: images/sleep.png
+   :alt: Профилирование времени простоя
+   :align: center
+
+
+ex04/profiling-tottime.txt
+---------------------------
+
+Файл содержит профилирование времени выполнения функций в программе, включая общее время исполнения.
+
+.. image:: images/tottime.png
+   :alt: Профилирование времени выполнения
+   :align: center
+
+
+ex04/profiling-http.txt
+------------------------
+
+Файл содержит результаты профилирования HTTP-запросов, собранные для анализа производительности.
+
+.. image:: images/http_x.png
+   :alt: Профилирование HTTP-запросов
+   :align: center
+
+
+ex04/profiling-ncalls.txt
+---------------------------
+
+Файл содержит статистику по количеству вызовов функций, что позволяет анализировать узкие места в программе.
+
+.. image:: images/numc.png
+   :alt: Количество вызовов функций
+   :align: center
+
+
+ex04/pstats-cumulative.txt
+-----------------------------
+
+Этот файл содержит кумулятивные данные профилирования, которые показывают совокупную информацию о времени выполнения и вызовах функций.
+
+.. image:: images/cuml.png
+   :alt: Кумулятивное профилирование
+   :align: center
+
+
+ex05/financial_test.py
+--------------------------
+
+Этот файл содержит тестовые данные для диагностики потенциальных ошибок в работе программы с помощью библиотеки PyTest
+
+.. image:: images/pytest.png
+   :alt: Тестирование на корректную работу
+   :align: center
