@@ -1,0 +1,64 @@
+2024-12-21 20:35:06 INFO: Инициализация класса Research, path: data.csv и has_header: True
+2024-12-21 20:35:06 INFO: File data.csv успешно открыт.
+2024-12-21 20:35:06 INFO: Успешно обработанно 12 строк.
+2024-12-21 20:35:06 INFO: Файл прочитан и проверен успешно.
+2024-12-21 20:35:06 INFO: Инициализация класса Calculations, длинна данных: 12.
+2024-12-21 20:35:06 INFO: Calculated counts: heads=5, tails=7
+2024-12-21 20:35:06 INFO: Calculated fractions: heads=41.67%, tails=58.33%
+2024-12-21 20:35:06 INFO: Генерируем 3 random.
+2024-12-21 20:35:06 INFO: Инициализация класса Calculations, длинна данных: 3.
+2024-12-21 20:35:06 INFO: Calculated counts: heads=1, tails=2
+2024-12-21 20:35:06 INFO: Файл report.txt сохранен
+2024-12-21 20:35:06 INFO: Telegram сообщение отправленно: The report has been successfully created.
+2024-12-21 20:35:25 INFO: Инициализация класса Research, path: data.csv и has_header: True
+2024-12-21 20:35:25 INFO: File data.csv успешно открыт.
+2024-12-21 20:35:25 INFO: Успешно обработанно 12 строк.
+2024-12-21 20:35:25 INFO: Файл прочитан и проверен успешно.
+2024-12-21 20:35:25 INFO: Инициализация класса Calculations, длинна данных: 12.
+2024-12-21 20:35:25 INFO: Calculated counts: heads=5, tails=7
+2024-12-21 20:35:25 INFO: Calculated fractions: heads=41.67%, tails=58.33%
+2024-12-21 20:35:25 INFO: Генерируем 3 random.
+2024-12-21 20:35:25 INFO: Инициализация класса Calculations, длинна данных: 3.
+2024-12-21 20:35:25 INFO: Calculated counts: heads=2, tails=1
+2024-12-21 20:35:25 INFO: Файл report.txt сохранен
+2024-12-21 20:35:25 INFO: Telegram сообщение отправленно: The report has been successfully created.
+2024-12-21 20:36:04 INFO: Инициализация класса Research, path: data.csv и has_header: True
+2024-12-21 20:36:04 INFO: File data.csv успешно открыт.
+2024-12-21 20:36:04 INFO: Успешно обработанно 12 строк.
+2024-12-21 20:36:04 INFO: Файл прочитан и проверен успешно.
+2024-12-21 20:36:04 INFO: Инициализация класса Calculations, длинна данных: 12.
+2024-12-21 20:36:04 INFO: Calculated counts: heads=5, tails=7
+2024-12-21 20:36:04 INFO: Calculated fractions: heads=41.67%, tails=58.33%
+2024-12-21 20:36:04 INFO: Генерируем 3 random.
+2024-12-21 20:36:04 INFO: Инициализация класса Calculations, длинна данных: 3.
+2024-12-21 20:36:04 INFO: Calculated counts: heads=0, tails=3
+2024-12-21 20:36:04 INFO: Файл report.txt сохранен
+2024-12-21 20:36:04 INFO: Telegram сообщение отправленно: The report has been successfully created.
+2024-12-21 21:21:26 INFO: Инициализация класса Research, path: data.csv и has_header: True
+2024-12-21 21:21:26 INFO: File data.csv успешно открыт.
+2024-12-21 21:21:26 INFO: Успешно обработанно 12 строк.
+2024-12-21 21:21:26 INFO: Файл прочитан и проверен успешно.
+2024-12-21 21:21:26 INFO: Инициализация класса Calculations, длинна данных: 12.
+2024-12-21 21:21:26 INFO: Calculated counts: heads=5, tails=7
+2024-12-21 21:21:26 INFO: Calculated fractions: heads=41.67%, tails=58.33%
+2024-12-21 21:21:26 INFO: Генерируем 3 random.
+2024-12-21 21:21:26 INFO: Инициализация класса Calculations, длинна данных: 3.
+2024-12-21 21:21:26 INFO: Calculated counts: heads=2, tails=1
+2024-12-21 21:21:26 INFO: Файл report.txt сохранен
+2024-12-21 21:21:26 INFO: Telegram сообщение отправленно: The report has been successfully created.
+2024-12-22 17:36:32 INFO: Инициализация класса Research, path: data.csv и has_header: True
+2024-12-22 17:36:32 INFO: File data.csv успешно открыт.
+2024-12-22 17:36:32 INFO: Успешно обработанно 12 строк.
+2024-12-22 17:36:32 INFO: Файл прочитан и проверен успешно.
+2024-12-22 17:36:32 INFO: Инициализация класса Calculations, длинна данных: 12.
+2024-12-22 17:36:32 INFO: Calculated counts: heads=5, tails=7
+2024-12-22 17:36:32 INFO: Calculated fractions: heads=41.67%, tails=58.33%
+2024-12-22 17:36:32 INFO: Генерируем 3 random.
+2024-12-22 17:36:32 INFO: Инициализация класса Calculations, длинна данных: 3.
+2024-12-22 17:36:32 INFO: Calculated counts: heads=2, tails=1
+2024-12-22 17:36:32 INFO: Файл report.txt сохранен
+2024-12-22 17:36:32 INFO: Telegram сообщение отправленно: The report has been successfully created.
+2024-12-22 17:36:44 INFO: Инициализация класса Research, path: data.csv и has_header: False
+2024-12-22 17:36:44 INFO: File data.csv успешно открыт.
+2024-12-22 17:36:44 ERROR: Ошибка чтения файла: invalid literal for int() with base 10: 'head'
+2024-12-22 17:36:44 INFO: Telegram сообщение отправленно: The report hasn’t been created due to an error.
