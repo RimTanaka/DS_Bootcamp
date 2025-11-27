@@ -1,0 +1,7 @@
+ivan.ivanov@corp.com
+jessica.johnson@corp.com
+mark.zuckerberg@corp.com
+elon.musk@corp.com
+bill.gates@corp.com
+invalid.email.com
+john.doe@gmail.com
